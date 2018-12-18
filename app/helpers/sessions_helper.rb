@@ -4,4 +4,12 @@ module SessionsHelper
     session[:name]
   end
 
+  def is_logged_in
+    if session[:name].present?
+      true
+    else
+      false
+    end
+  end 
+
 end

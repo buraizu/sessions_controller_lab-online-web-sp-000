@@ -10,6 +10,6 @@ module SessionsHelper
     else
       false
     end
-  end 
+  end
 
 end

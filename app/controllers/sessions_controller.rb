@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
-    render 'new'
+    
   end
 
   def create
@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       session[:name] = params[:name]
     else
       redirect_to "/login"
-
+    end
   end
 
   def destroy
